@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment</title>
+     
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+    
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main>
+            <!-- Header Starts -->
+            <nav class="navbar">
+                <div class="container-fluid py-4 shadow-sm"></div>
+            </nav>
+            
+
+            <!-- Hero Section Starts -->
+            <section class="container-fluid">
+                <div class="container py-5">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-6">
+                            <h5
+                                class="text-danger font-weight-thin text-uppercase"
+                            >
+                                Award Winning
+                            </h5>
+                            <h3 class="display-5 fw-bold text-uppercase">
+                                Digital Marketing Agency
+                            </h3>
+                            <p class="mt-4 text-muted">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Quisquam voluptates, quod,
+                                quae, quos quia quibusdam quidem voluptate,
+                                voluptates, quod.
+                            </p>
+                            <button
+                                type="button"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                                class="mt-4 btn rounded-0 btn-danger text-uppercase"
+                            >
+                                Contact us
+                            </button>
+                        </div>
+                        <div class="col-md-6">
+                            <img
+                                src="./img/main.jpg"
+                                alt="hero"
+                                class="img-fluid rounded-1 shadow-lg float-end"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Modal Starts -->
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div class="myform text-dark">
+                                <h4 class="text-left text-uppercase">Talk to us</h4>
+                                <form method="post" action="https://getform.io/f/zbxdepgb">
+                                    <div class="mb-3 mt-4">
+                                        <input name="email" type="email" class="form-control form-control-underline" id="workEmail" placeholder="Work email*" required>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control form-control-underline" id="firstName" name="first_name" placeholder="First name*" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <input type="text" class="form-control form-control-underline" id="lastName" name="last_name" placeholder="Last name*" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                                        <label class="form-check-label" for="termsCheck">
+                                            I agree to Fyle's terms and conditions, and provide consent to send me communication.
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-red w-100">Contact Us</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Hero Section Ends -->
+
+            <!-- What We Do Section Starts -->
+            <section class="container-fluid bg-body-tertiary" >
+                <div class="container py-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5
+                                class="text-danger font-weight-thin text-uppercase"
+                            >
+                                What We Do
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-5">
+                            <h1 class="fw-bold text-uppercase">
+                                Services Provide For You
+                            </h1>
+                        </div>
+                        <div class="col-md-7">
+                            <p class="text-muted">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsa aliquam rem eius dolorem
+                                unde possimus praesentium eligendi vero ipsam,
+                                nobis soluta reiciendis et, beatae tempora
+                                doloribus non, doloremque sunt magni.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image-row">
+                        <div
+                            class="image-container"
+                            onmouseover="highlightImage(0)"
+                        >
+                            <img
+                                src="img/img1.jpeg"
+                                alt="Image 1"
+                                class="rounded-2"
+                            />
+                            <div class="overlay">
+                                <p>Web Development</p>
+                                <a
+                                    class="text-danger text-decoration-none"
+                                    href="https://fylehq.com"
+                                    target="_blank"
+                                    ><button>Read More</button></a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="image-container"
+                            onmouseover="highlightImage(1)"
+                        >
+                            <img
+                                src="img/img2.jpeg"
+                                alt="Image 2"
+                                class="rounded-2"
+                            />
+                            <div class="overlay">
+                                <p>Slide 2</p>
+                                <a
+                                    class="text-danger text-decoration-none"
+                                    href="https://fylehq.com"
+                                    target="_blank"
+                                    ><button>Read More</button></a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="image-container"
+                            onmouseover="highlightImage(2)"
+                        >
+                            <img
+                                src="img/img3.jpeg"
+                                alt="Image 3"
+                                class="rounded-2"
+                            />
+                            <div class="overlay">
+                                <p>Slide 3</p>
+                                <a
+                                    class="text-danger text-decoration-none"
+                                    href="https://fylehq.com"
+                                    target="_blank"
+                                    ><button>Read More</button></a
+                                >
+                            </div>
+                        </div>
+                        <div
+                            class="image-container"
+                            onmouseover="highlightImage(3)"
+                        >
+                            <img
+                                src="img/img 4.jpeg"
+                                alt="Image 4"
+                                class="rounded-2"
+                            />
+                            <div class="overlay">
+                                <p>Slide 4</p>
+                                <a
+                                    class="text-danger text-decoration-none"
+                                    href="https://fylehq.com"
+                                    target="_blank"
+                                    ><button>Read More</button></a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dots">
+                        <span
+                            class="dot active"
+                            onclick="highlightImage(0)"
+                        ></span>
+                        <span class="dot" onclick="highlightImage(1)"></span>
+                        <span class="dot" onclick="highlightImage(2)"></span>
+                        <span class="dot" onclick="highlightImage(3)"></span>
+                    </div>
+                </div>
+            </section>
+            <!-- What We Do Section Ends -->
+
+            <!-- Our Project Section Starts -->
+            
+            <section class="container-fluid">
+
+                <div class="container py-5">
+                    <div class="row">
+                        <h5 class="text-uppercase text-danger text-center">
+                            WHY CHOOSE US
+                        </h5>
+                        <h2 class="text-center text-uppercase fw-bold mt-3">
+                            why we are best
+                        </h2>
+                    </div>
+                    
+                    <div class="choose-us">
+                        <div>
+                            <img src="/img/logo.jpg" ><br>
+                            <strong> Clarified Vision</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nam </p>
+                        </div>
+                        <div>
+                            <img src="/img/logo.jpg" ><br>
+                            <strong> High performance</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nam </p>
+                        </div>
+                        <div>
+                            <img src="/img/logo.jpg" ><br>
+                            <strong> Security</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nam .</p>
+                        </div>
+                        <div>
+                            <img src="/img/logo.jpg" ><br>
+                            <strong> Strategy & Quality</strong>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe nam </p>
+                        </div>
+                    </div>
+                    <div class="container py-5">
+                    <div class="row">
+                        <h5 class="text-uppercase text-danger text-center">
+                            our project
+                        </h5>
+                        <h2 class="text-center text-uppercase fw-bold mt-3">
+                            why we are best
+                        </h2>
+                    </div>
+                    <div class="row mt-4 d-flex align-items-center">
+                        <div class="col-md-6">
+                            <img
+                                id="main-image"
+                                src="./img/fruits.jpeg"
+                                alt="fruits"
+                                class="img-fluid rounded-2 shadow-lg"
+                            />
+                        </div>
+                        <div class="col-md-5 ms-4">
+                            <div class="row w-75 p-4 a_box" onclick="changeImage('image1')">
+                                <div class="col">
+                                    <h4 class="fw-bold">Heading 1</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row w-75 p-4 mt-4 mb-4 a_box" onclick="changeImage('image2')">
+                                <div class="col">
+                                    <h4 class="fw-bold">Heading 2</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row w-75 p-4 a_box" onclick="changeImage('image3')">
+                                <div class="col">
+                                    <h4 class="fw-bold">Heading 3</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Our Project Section Ends -->
+
+            <!-- Expert Growth Section Starts -->
+            <section class="container-fluid bg-body-tertiary">
+                <div class="container py-5">
+                    <div class="row">
+                        <h5 class="text-uppercase text-danger text-center">
+                            expert growths
+                        </h5>
+                        <h2 class="text-center text-uppercase fw-bold mt-3">
+                            our company growth
+                        </h2>
+                    </div>
+                    <div class="row mt-4 gap-4 d-flex justify-content-center">
+                        <div
+                            class="last_box col-md-2 text-center bg-white py-4"
+                        >
+                        <i class="bi bi-heart-fill icon-red" style="font-size: 1rem;"></i>
+                            <h4>199+</h4>
+                            <p>Satisfied Customers</p>
+                        </div>
+                        <div
+                            class="last_box col-md-2 text-center bg-white py-4"
+                        >
+                        <i class="bi bi-clock-fill icon-red" style="font-size: 1rem;"></i>
+                            <h4>283+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div
+                            class="last_box col-md-2 text-center bg-white py-4"
+                        >
+                        <i class="bi bi-check-circle-fill icon-red" style="font-size: 1rem;"></i>
+                            <h4>75+</h4>
+                            <p>Awards Win</p>
+                        </div>
+                        <div
+                            class="last_box col-md-2 text-center bg-white py-4"
+                        >
+                        <i class="bi bi-trophy-fill icon-red" style="font-size: 1rem;"></i>
+                            <h4>199+</h4>
+                            <p>Satisfied Customers</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Expert Growth Section Ends -->
+             <footer class ="client-feedback">
+        <div>
+            <h3>CLIENT'S FEEDBACK</h3>
+            <h1>PEOPLE SAY'S ABOUT US !</h1>
+           <p> <strong>
+                <span class="quote">"</span> Jannat Tumpa The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.
+            </strong></p>
+            <p class="author">JANNAT TUMPA - COO, AMERIMAR ENTERPRISES, INC.</p>
+        </div>
+        <div class="logos">
+            <img src="/img/logo2.jpeg" alt="Harrison Industry Co">
+            <img src="/img/logo2.jpeg" alt="Design Studio">
+            <img src="/img/logo2.jpeg" alt="Design Exclusive">
+            <img src="/img/logo2.jpeg" alt="Fort Dexon">
+            <img src="/img/logo2.jpeg" alt="Barbecue">
+            <img src="/img/logo2.jpeg" alt="Caley Peace">
+        </div>
+    </footer>
+        </main>
+        <!-- Bootstrap js cdn -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Custom Js Link -->
+        <script src="scripts.js"></script>
+    </body>
+</html>
